@@ -12,7 +12,7 @@ const Mariana = () => {
         <CardActions>
           <Link to="//www.marianarivasmaal.com" className={styles.link}>
             {" "}
-            <OutlinedButton>Visit the website of Mariana</OutlinedButton>
+            <OutlinedButton>Visit the website of Mariana Rivas</OutlinedButton>
           </Link>
         </CardActions>
       </div>
