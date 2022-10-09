@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import OfflineButton from "../../views/OfflineButton/OfflineButton";
 import Container from "@material-ui/core/Container";
 import styles from "./Justyna.module.scss";
 
@@ -31,7 +30,7 @@ const Justyna = () => {
               <p>Published:10-10-2022</p>
             </div>
             <Link to={`/`} className={styles.link}>
-              <OfflineButton>Home</OfflineButton>
+              <p>Home</p>
             </Link>
           </div>
         </div>

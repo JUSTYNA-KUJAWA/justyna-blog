@@ -8,16 +8,15 @@ import {
   CardActions,
   Typography,
 } from "@material-ui/core";
-import OfflineButton from "../../views/OfflineButton/OfflineButton";
 import styles from "./ArticleView.module.scss";
 
 const ArticleView = () => {
   return (
     <div className={styles.root}>
       <Card elevation={12}>
-        <CardHeader title="Justi_In_IN " subheader="October 10, 2022" />
+        <CardHeader title="Justi_In_IT " subheader="October 10, 2022" />
         <CardContent>
-          <Typography variant="subtitle1" color="text.secondary" component="p">
+          <Typography variant="subtitle1" component="p">
             Once upon the time there was a princess Justyna.....hmmm do not
             worry it will not be a love story I invite you to read my road to
             become a women changing profession to IT.... Why this photo? I would
@@ -27,7 +26,7 @@ const ArticleView = () => {
         </CardContent>
         <CardActions>
           <Link to={`/justyna`} className={styles.link}>
-            <OfflineButton>Read more</OfflineButton>
+            <p>Read more</p>
           </Link>
         </CardActions>
         <CardMedia

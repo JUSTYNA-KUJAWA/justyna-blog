@@ -3,7 +3,6 @@ import styles from "./Hero.module.scss";
 import Carousel from "../../common/Carousel/Carousel";
 import { Link } from "react-router-dom";
 import { CardActions } from "@material-ui/core";
-import OutlinedButton from "../../views/OfflineButton/OfflineButton";
 
 const Hero = () => {
   return (
@@ -20,7 +19,7 @@ const Hero = () => {
         <CardActions>
           <Link to={"/Projects"} className={styles.link}>
             {" "}
-            <OutlinedButton>See all projects</OutlinedButton>
+            <p>See all projects</p>
           </Link>
         </CardActions>
       </div>
