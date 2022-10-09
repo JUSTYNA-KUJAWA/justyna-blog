@@ -1,0 +1,11 @@
+@import "../../../styles/settings.scss";
+.root {
+  display: grid;
+  grid-template-columns: 2fr, 2fr;
+  .article {
+    float: left;
+  }
+  .message {
+    float: right;
+  }
+}

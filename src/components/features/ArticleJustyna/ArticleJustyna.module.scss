@@ -1,0 +1,47 @@
+import React from 'react';
+import { Link, } from 'react-router-dom';
+
+
+const ArticleJustyna = () => {
+  return (
+    <Container>
+      { (load.active) && <div className={styles.circular}><Circular /></div> }
+      { ((!load.active && !load.success) || load.error) &&
+        (
+          <div className={styles.root}>
+            <div className={styles.postContainer}>
+              {isDraft()}
+              <img alt={post.title} src={post.image ? post.image : 'https://www.freeiconspng.com/uploads/no-image-icon-1.jpg'}/>
+              <div className={styles.infoContainer}>
+                <h1>{post.title}</h1>
+                {post.location && (
+                  <div className={styles.address}>
+                    <PlaceOutlinedIcon/>
+                    <h1>{post.location}</h1>
+                  </div>
+                )}
+                <div className={styles.text}>
+                  <p>{post.text}</p>
+                </div>
+                <div className={styles.price}>
+                  <p>Price: {post.price} USD / day</p>
+                </div>
+                <div className={styles.contactInfo}>
+                  <h3>Contact info:</h3>
+                  <p><span>email:</span> {post.mail}</p>
+                  <p><span>phone number:</span> {post.phone}</p>
+                </div>
+                <div className={styles.dates}>
+                  <p>Published: {utils.dateToStr(post.created)} {post.updated && (<span>Edited: {utils.dateToStr(post.updated)}</span>)}</p>
+                </div>
+                {editButton()}
+                <Link to={`/posts`} className={styles.link}><OfflineButton>Back to posts</OfflineButton></Link>
+              </div>
+            </div>
+          </div>
+        )}
+    </Container>
+  );
+};
+
+export default ArticleJustyna;

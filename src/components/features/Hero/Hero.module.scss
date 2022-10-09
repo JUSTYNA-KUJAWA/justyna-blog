@@ -1,0 +1,54 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  position: relative;
+
+  img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  .banner {
+    position: absolute;
+    right: 5%;
+    top: 45%;
+    padding: 10px 25px;
+
+    p {
+      span {
+        font-size: $base-size * 2;
+        margin: 20px;
+      }
+
+      font-size: $base-size + 30;
+      font-weight: 500;
+      word-spacing: 4px;
+      color: black;
+    }
+  }
+  .link {
+    text-decoration: none;
+    background-color: cadetblue;
+    font-size: 30px;
+    margin-left: 500px;
+    margin-bottom: -210px;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .root {
+    .banner {
+      position: absolute;
+      top: 50%;
+      left: 3%;
+
+      p {
+        span {
+          font-size: $base-size * 2;
+        }
+        font-size: $base-size + 3;
+      }
+    }
+  }
+}

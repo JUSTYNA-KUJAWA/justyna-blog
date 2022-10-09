@@ -1,0 +1,23 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  position: relative;
+  padding-top: 40px;
+  img {
+    object-fit: fill;
+    height: 350px;
+    width: 800px;
+    border-radius: 8px;
+    border: 2px solid #000;
+  }
+  .link {
+    position: absolute;
+    text-decoration: none;
+    color: azure;
+    background-color: cadetblue;
+    font-size: 25px;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-bottom: 670px;
+  }
+}

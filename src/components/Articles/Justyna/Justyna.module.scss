@@ -1,0 +1,99 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  width: 1200px;
+  padding-top: 150px;
+  @include flex(column, center, center);
+  color: black;
+
+  .spinner {
+    text-align: center;
+    margin: 100px 0;
+    font-size: 25px;
+  }
+
+  .link {
+    text-decoration: none;
+  }
+
+  .postContainer {
+    width: 1100px;
+    margin: 20px 0;
+    padding: 20px 0;
+    background: white;
+    border-radius: 3%;
+    @include flex(column, center, center);
+    border: solid 3px grey;
+    font-weight: 700;
+
+    img {
+      max-width: 800px;
+      max-height: 600px;
+      object-fit: cover;
+      overflow: hidden;
+      border-radius: 5%;
+    }
+
+    .infoContainer {
+      display: flex;
+      @include flex(column, center, center);
+      width: 100%;
+
+      h1 {
+        color: rgb(69, 113, 110);
+        margin: 20px;
+      }
+
+      .address {
+        margin: 10px 0;
+        text-align: center;
+        h2 {
+          margin: 5px 0;
+        }
+      }
+      .text {
+        width: 100%;
+        font-size: 25px;
+        padding: 20px;
+      }
+      .contactInfo {
+        text-align: center;
+        background-color: rgb(69, 113, 110);
+        width: 100%;
+        padding-left: 0px;
+        color: white;
+        letter-spacing: 2px;
+        h3 {
+          margin: 5px;
+        }
+        p {
+          margin: 5px;
+        }
+        span {
+          font-weight: 700;
+        }
+      }
+      .dates {
+        padding: 0 20px;
+        color: rgb(4, 55, 20);
+        font-weight: 800;
+        font-size: 35px;
+        padding-bottom: 10px;
+        padding-top: 15px;
+        p {
+          font-weight: 800;
+          font-size: 25px;
+          span {
+            margin-left: 50px;
+            font-weight: 800;
+          }
+        }
+      }
+      .buttons {
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+}

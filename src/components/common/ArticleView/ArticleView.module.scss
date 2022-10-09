@@ -1,0 +1,12 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  .link {
+    text-decoration: none;
+    background-color: cadetblue;
+    border-radius: 8px;
+  }
+}

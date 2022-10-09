@@ -1,0 +1,21 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  position: relative;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  img {
+    object-fit: fill;
+    height: 350px;
+    width: 800px;
+    border-radius: 8px;
+    border: 2px solid #000;
+  }
+  .banner {
+    position: absolute;
+    left: -1%;
+    top: 15%;
+    padding: 10px 25px;
+    color: aliceblue;
+  }
+}
