@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import styles from "./NavBar.module.scss";
 import clsx from "clsx";
 
@@ -10,7 +12,6 @@ const Navbar = () => {
     <div className={styles.root}>
       <div className={styles.logo}>
         <h3>Justi_In_IT</h3>
-        <h5>How to enjoy programming </h5>
       </div>
       <div className={styles.navLinks}>
         <ul className={clsx(isNavExpanded && styles.isExpanded)}>
@@ -55,6 +56,12 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
+        <button
+          className={clsx(styles.button, styles.hamburger)}
+          onClick={() => setIsNavExpanded(!isNavExpanded)}
+        >
+          <FontAwesomeIcon icon={faBars} />
+        </button>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Hero.module.scss";
 import Carousel from "../../common/Carousel/Carousel";
+import Button from "../../common/Button/Button";
 import { Link } from "react-router-dom";
 import { CardActions } from "@material-ui/core";
 
@@ -19,7 +20,7 @@ const Hero = () => {
         <CardActions>
           <Link to={"/Projects"} className={styles.link}>
             {" "}
-            <p>See all projects</p>
+            <Button>See all projects</Button>
           </Link>
         </CardActions>
       </div>

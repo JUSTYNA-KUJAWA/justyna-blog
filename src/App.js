@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/pages/Home/Home";
 import MainLayout from "./components/views/MainLayout/MainLayout";
-import NotFound from "./components/pages/NotFound/NotFound";
 import Projects from "./components/pages/Projects/Projects";
 import Travel from "./components/pages/Travel/Travel";
 import Justyna from "./components/Articles/Justyna/Justyna";
@@ -17,7 +16,6 @@ const App = () => {
           <Route path="/Articles" element={<Articles />} />
           <Route path="/Projects" element={<Projects />} />
           <Route path="/justyna" element={<Justyna />} />
-          <Route path="*" element={<NotFound />} />
         </Routes>
       </MainLayout>
     </BrowserRouter>

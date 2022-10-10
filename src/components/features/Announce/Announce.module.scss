@@ -4,6 +4,8 @@
   position: relative;
   padding-bottom: 40px;
   padding-top: 40px;
+  object-fit: fill;
+  justify-content: center;
   img {
     object-fit: fill;
     height: 350px;
@@ -15,7 +17,6 @@
     position: absolute;
     left: -1%;
     top: 15%;
-    padding: 10px 25px;
-    color: aliceblue;
+    color: black;
   }
 }
